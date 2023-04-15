@@ -1,0 +1,168 @@
+* {
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cotn_principal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cotn_principal{
+  animation: changeBackgroundImage 13s infinite;
+  align-items: center;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@keyframes changeBackgroundImage {
+  0% {
+    background-image: url(assets/bebe_sorrindo.png);
+  }
+  25% {
+    background-image: url(assets/imunizacao.png);
+  }
+  50% {
+    background-image: url(assets/bebe_vacina.png);
+  }
+  75% {
+    background-image: url(assets/bebe_sorrindo.png);
+  }
+  100% {
+    background-image: url(assets/imunizacao.png);
+  }
+}
+.cont_login { /*PosiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o de TUDO*/
+  position: relative;
+  width: 64px;
+  left: 50%;
+  margin-top: 280px;
+  margin-left: -140px;
+}
+
+.cont_forms { /*Tamanho do Login Inicial*/
+  position: absolute;
+  top: 125px;
+  width: 320px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #0014fd73;
+
+  /*TransiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o*/
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_forms_active_login { /*IMG do Login*/
+  box-shadow: 1px 10px 60px -10px rgb(0 0 0);
+  height: 455px;  
+  top: 25px;
+  background-color: #5429cc;
+ }
+
+.cont_info_log_sign_up {
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+} 
+
+.col_md_login {
+  position: relative;
+  float: left;
+  width: 52%;
+}
+
+.btn_login { 
+  background-color: #ff872c;
+  border: none;
+  padding: 10px;
+  width: 198px;
+  border-radius:8px;
+  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+  color: #000;
+  font-size: 16px;
+  font-family: Poppins;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+#butao{
+  margin-left: 62px;
+}
+
+.cont_ba_opcitiy {     /*Login Inicial*/
+  position: absolute;
+  padding: 64px 0px 0px 64px;
+  margin-top: 16px;
+  color: white;
+}
+
+h2{padding: 8px;} p{text-align:justify; letter-spacing: .8px;}
+
+.cont_forms_active_login {
+z-index: 1;  
+}
+
+input {
+  padding: 12px 4px;
+  margin-top: 16px;
+  width: 260px;
+  text-align: left;
+  color: #000000;
+  font-weight: bold;
+  background: transparent;
+  border-bottom: 2px solid #000000;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  
+}
+#i1{
+  background-image:url(assets/userprofile1.svg);
+  filter: url("filters.svg#filter-id");
+  background-repeat:no-repeat;
+  background-position: 230px 8px;
+  background-size: 25px;
+  filter: invert(100%); /*Inverte as cores, baseado em porcentagem*/
+}
+
+#i2{
+  background-image:url(assets/password.svg);
+  background-repeat:no-repeat;
+  background-position: 228px 2px;
+  background-size: 30px;
+  filter: invert(100%);
+}
+input::placeholder{
+  color: #564949;
+}
+
+.cont_form_login img {
+  margin: 12px;
+  max-width: 80px;
+  margin-top: 64px; 
+  margin-right: 52px;
+  height: 68px;
+  width: 68px;
+  padding: 12px;
+}
+
+.cont_form_login a{
+  float: left;
+  color: white;
+  margin: 8px;
+  margin-left: 16px;
+}
+.btn_login:focus{
+  outline: 0;
+  border:2px solid #5e55dc;
+}
+input:focus{
+  outline: 0;
+}
